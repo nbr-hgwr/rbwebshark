@@ -1,24 +1,13 @@
-# README
+# rbwebshark
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Usage
+### Use Docker
+```
+cd Docker
 
-Things you may want to cover:
+docker-compose up -d
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+docker exec -it docker_web_node1_1 /bin/sh
+  source /etc/profile.d/rbenv.sh
+  cd rbwebshark/
+```
